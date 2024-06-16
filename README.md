@@ -5,7 +5,8 @@ A fully functioning Opencore EFI for the Lenovo Yoga 370
   <summary>Me Yapping a little</summary>
   This is my first OpenCore EFI (well, my first EFI in general). Despite my inexperience, it is fully functional except for Airdrop, which can be a little flaky at times. I haven't been able to add the boot chime to the OpenCore drive picker, likely due to my stupidity. However, this EFI is stable and runs fine. If you have improvements or questions, please DM me or reach out on Discord: knyyl. Thanks to y'all.
 </details>
-<strong>Installation</strong>               
+<strong>Installation</strong>        
+
 BIOS Settings:
     Note: Most of these options may not be present in your firmware, I recommend matching up as closely as possible but don't be too concerned if many of these options are not available in your BIOS
 
