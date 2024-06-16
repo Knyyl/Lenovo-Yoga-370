@@ -37,20 +37,49 @@ Enable
     DVMT Pre-Allocated(iGPU Memory): 64MB or higher
     SATA Mode: AHCI
 
-Downloading Macos:
-  https://github.com/acidanthera/OpenCorePkg/tree/master              
-  Clone this repo and go into Utilites and then Macrecovery            
-  Open a terminal window and type: python3 ./macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download             
-  Copy the recovery.apple.com, you will need it later                
-Makeing the installation Usb:                 
-  If you're on windows, Download Rufus. set the Usb as non bootable and the partition as gpt.           
-  Then, paste the recovery.apple.com into the Root directory of the drive (Root directory = The page that loads when you first open the Usb)       
-  Copy the !UNZIPPED! EFI there aswell.       
-Reboot, and hit enter and then F12 to choose a startup disk. Once you booted of your usb, choose the Macos recovery image (if it doesnt show, press the space bar).      
-Format your drive as apfs. (You can dual boot, just make sure to copy the contents of your existing efi into the new one).         
-After that, you can copy your EFI from the Usb stick to your pc so It can boot up without the Usb stick.          
-Once you loaded into macos, open a terminal window and type "diskutil list".          
-Then choose the drive which contains your EFI. Its usually /dev/disk0s2           
-Copy the EFI to your desktop, incase something goes wrong, and then put the !UNZIPPED! EFI from the Usb stick there.         
-You should be good to go rn, if you're not, feel free to dm me and Ill help with your issue.      
-Good luck x3 Knyyl       
+Certainly! Below is a nicely formatted version of your instructions for GitHub:
+
+# macOS Installation Guide
+
+## Downloading macOS
+1. Clone the OpenCorePkg repository from GitHub:
+   ```sh
+   git clone https://github.com/acidanthera/OpenCorePkg.git
+   ```
+2. Navigate to the `Macrecovery` directory:
+   ```sh
+   cd OpenCorePkg/Utilities/Macrecovery
+   ```
+3. Open a terminal window and run the following command to download the recovery image:
+   ```sh
+   python3 ./macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download
+   ```
+4. Copy the `recovery.apple.com` URL, you will need it later.
+
+## Making the Installation USB
+### On Windows:
+1. Download and open [Rufus](https://rufus.ie/).
+2. Set the USB as non-bootable and the partition scheme as GPT.
+3. Paste the `recovery.apple.com` file into the root directory of the USB drive (Root directory = The page that loads when you first open the USB).
+4. Copy the **unzipped** `EFI` folder to the root directory of the USB drive as well.
+
+## Booting from the USB
+1. Reboot your computer and press `Enter`, then `F12` to choose a startup disk.
+2. Boot from your USB drive and select the macOS recovery image (if it doesn't show, press the space bar).
+3. Format your drive as APFS. (You can dual boot, just make sure to copy the contents of your existing EFI into the new one).
+4. After formatting, you can copy your `EFI` from the USB stick to your PC so it can boot up without the USB stick.
+
+## Post-Installation
+1. Once you have booted into macOS, open a terminal window and type:
+   ```sh
+   diskutil list
+   ```
+2. Identify the drive which contains your EFI partition, usually `/dev/disk0s2`.
+3. Copy the `EFI` folder to your desktop as a backup.
+4. Replace the EFI on your drive with the **unzipped** `EFI` from the USB stick.
+
+## Troubleshooting
+If you encounter any issues, feel free to DM me for assistance.
+
+Good luck! x3  
+*Knyyl*
