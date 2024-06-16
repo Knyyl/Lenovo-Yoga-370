@@ -1,11 +1,9 @@
 # Lenovo-Yoga-370
 A fully functioning Opencore EFI for the Lenovo Yoga 370
 
-
-Okayy so this is my first Opencore efi (Well my first EfI in general but eh). Regardless of that it is fully Funktional, except for airdrop, it is a little flumys sometimes.
-I haven't been able to add the boot chime to the OpenCore drive picker, but that is probably since im inexperienced. However, this EfI stable and runs fine.
-If you have improvements or Questions, please dm me or write me on Discord: knyyl. Thanks to y'all.
-EFI Works with MacOs Big Sur
+<details>
+  <summary>Overview</summary>
+  This is my first OpenCore EFI (well, my first EFI in general). Despite my inexperience, it is fully functional except for Airdrop, which can be a little flaky at times. I haven't been able to add the boot chime to the OpenCore drive picker, likely due to my inexperience. However, this EFI is stable and runs fine. If you have improvements or questions, please DM me or reach out on Discord: knyyl. Thanks to y'all.
 
 *Installation*
 BIOS Settings:
@@ -36,8 +34,6 @@ Enable
     OS type: Windows 8.1/10 UEFI Mode (some motherboards may require "Other OS" instead)
     DVMT Pre-Allocated(iGPU Memory): 64MB or higher
     SATA Mode: AHCI
-
-Certainly! Below is a nicely formatted version of your instructions for GitHub:
 
 # macOS Installation Guide
 
