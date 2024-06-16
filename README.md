@@ -50,13 +50,13 @@ Enable
    ```sh
    python3 ./macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download
    ```
-4. Copy the `recovery.apple.com` URL, you will need it later.
+4. Copy the `com.apple.recovery` folder, you will need it later.
 
 ## Making the Installation USB
 ### On Windows:
 1. Download and open [Rufus](https://rufus.ie/).
 2. Set the USB as non-bootable and the partition scheme as GPT.
-3. Paste the `recovery.apple.com` file into the root directory of the USB drive (Root directory = The page that loads when you first open the USB).
+3. Paste the `com.apple.recovery` file into the root directory of the USB drive (Root directory = The page that loads when you first open the USB).
 4. Copy the **unzipped** `EFI` folder to the root directory of the USB drive as well.
 
 ## Booting from the USB
