@@ -3,7 +3,7 @@ A fully functioning Opencore EFI for the Lenovo Yoga 370
 
 <details>
   <summary>Me Yapping a little</summary>
-  This is my first OpenCore EFI (well, my first EFI in general). Despite my inexperience, it is fully functional except for Airdrop, which can be a little flaky at times. I haven't been able to add the boot chime to the OpenCore drive picker, likely due to my stupidity. However, this EFI is stable and runs fine. If you have improvements or questions, please DM me or reach out on Discord: knyyl. Thanks to y'all.
+  This is my first OpenCore EFI. Despite my inexperience, it is fully functional except for Airdrop, since the Laptops Wifi/Bluetooth card is incompatible. However, it is possible to install a compatible card yourself.. However, this EFI is stable and runs fine. If you have improvements or questions, please DM me or reach out on Discord: altknyyl. Thanks to y'all.
 </details>
 <strong>Installation</strong>        
 
