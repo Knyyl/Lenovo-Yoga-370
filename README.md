@@ -55,12 +55,18 @@ Enable
 2. Set the USB as non-bootable and the partition scheme as GPT.
 3. Paste the `com.apple.recovery` file into the root directory of the USB drive (Root directory = The page that loads when you first open the USB).
 4. Copy the **unzipped** `EFI` folder to the root directory of the USB drive as well.
+5. If dual booting, format the partition for MacOS beforhand, perferably to NTFS if dual booting with Windows, as this will make the installation process simpler. 
 
 ## Booting from the USB
 1. Reboot your computer and press `Enter`, then `F12` to choose a startup disk.
 2. Boot from your USB drive and select the macOS recovery image (if it doesn't show, press the space bar).
 3. Format your drive as APFS. (You can dual boot, just make sure to copy the contents of your existing EFI into the new one).
 4. After formatting, you can copy your `EFI` from the USB stick to your PC so it can boot up without the USB stick.
+
+## Installation from the USB (aka recovery mode).
+1. Click on "Disk-Utility" and then select "View" (on the top bar) and click on "Show all devices".
+2. Select your drive and then proceed accordingly to your needs.
+3. Hit the red X and go back to the first menu you saw, and click on Install "name of MacOS version". Connect your device to a network (assuming you´re making an online installation) and Agree to the Terms of Service. Then Select the drive (or the partition if Dual booting) where you want to install MacOS.
 
 ## Post-Installation
 1. Once you have booted into macOS, open a terminal window and type:
